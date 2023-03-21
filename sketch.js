@@ -49,8 +49,6 @@ function draw() {
   movimentoRaquete();
   movimentaRaqueteOponente()
   //movimentaRaqueteOponenteManual();
-  //verificaColisaoRaquete(xRaquete,yRaquete);
-  //verificaColisaoRaquete(xRaqueteOponente,yRaqueteOponente);
   verificaColisaoGithub(xRaquete,yRaquete);
   verificaColisaoGithub(xRaqueteOponente,yRaqueteOponente);
   marcaPontos();
@@ -98,7 +96,8 @@ function verificaColisaoBolinha() {
   }
 }
 
-/*function verificaColisaoRaquete(x,y){
+/*Futuros testes de verificar a colisão
+function verificaColisaoRaquete(x,y){
   if ((xBolinha - raio) < (x + comprimentoRaquete)
       && (yBolinha - raio) < (y + alturaRaquete)
       && (yBolinha + raio) > (y)) {
